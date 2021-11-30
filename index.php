@@ -49,14 +49,22 @@ $qa = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header_a">
-
+            <img src="pngegg.png" alt="google-logo">
+            <h1>Privacy e termini</h1>
         </div>
         <div class="header_b">
-            
+            <ul>
+                <li><a href="#">Introduzione</a></li>
+                <li><a href="#">Norme sulla privacy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+                <li><a href="#">Tecnologie</a></li>
+                <li><a href="#">Domande frequenti</a></li>
+            </ul>
         </div>
     </header>
     <main>
