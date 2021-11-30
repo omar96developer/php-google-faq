@@ -66,6 +66,7 @@ main ol li{
 } 
 main ol li p {
     padding-left: 10px;
+    margin-bottom: 20px;
 }
 .ordered {
     margin-left: 20px;
