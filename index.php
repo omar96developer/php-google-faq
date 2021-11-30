@@ -25,6 +25,7 @@ $qa = [
         "listA2" => "La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.",
         "listB1" => "Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.",
         "listB2" => "Google LLC, con sede negli Stati Uniti, per il resto del mondo.",
+        "display" => "active",
     ],
     [
         "domanda" => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
@@ -83,12 +84,23 @@ $qa = [
             $list2 = $qst["listA2"];
             $list3 = $qst["listB1"];
             $list4 = $qst["listB2"];
+            $active = $qst["display"];
+
 
             
             echo "<li>
             <h1>$dom</h1>
             <p>$para1</p>
-            
+            <ol class='$active'>
+                <li><p>$list1</p></li>
+
+                <ol type='a' class='$active'>
+                    <li><p>$list3</p></li>
+                    <li><p>$list4</p></li>
+                </ol>
+
+                <li><p>$list2</p></li>
+            </ol> 
             <p>$para2</p>
             <p>$para3</p>
             <p>$para4</p>

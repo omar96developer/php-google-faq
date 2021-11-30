@@ -45,14 +45,19 @@ main {
 main ul {
     width: 1000px;
     margin: auto;
-}
-main li {
     list-style: none;
 }
+
 main li h1 {
     margin-bottom: 20px;
     font-weight: 200;
 }
 main li p {
     margin-bottom: 40px;
+}
+ol{
+    display: none;
+}
+ol.active {
+    display: block;
 }
