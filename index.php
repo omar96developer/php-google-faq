@@ -13,15 +13,18 @@ $qa = [
         "domanda" => "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
         "para1" => "Sappiamo che la sicurezza e la privacy sono importanti per te e lo sono anche per noi. Per noi è imperativo offrire un'elevata sicurezza e assicurarti che le tue informazioni sono al sicuro e accessibili quando ne hai bisogno.",
         "para2" => "Siamo costantemente al lavoro per garantire un'elevata sicurezza, proteggere la tua privacy e rendere Google ancora più efficace ed efficiente per te. Spendiamo centinaia di milioni di dollari ogni anno per la sicurezza e ci avvaliamo di esperti di fama mondiale in materia di sicurezza dei dati per mantenere le tue informazioni al sicuro. Abbiamo inoltre sviluppato strumenti per la sicurezza e la privacy di facile utilizzo come Google Dashboard, la verifica in due passaggi e Impostazioni annunci. Così, per quanto riguarda le informazioni che condividi con Google, hai il massimo controllo.",
-        "para3" => "Puoi leggere ulteriori informazioni sulla sicurezza online, incluso come proteggere te e la tua famiglia online, nel Centro Google per la sicurezza online."
-        "para4" => "Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.",
+        "para3" => "Puoi leggere ulteriori informazioni sulla sicurezza online, incluso come proteggere te e la tua famiglia online, nel Centro Google per la sicurezza online.",
+        "para4" => "Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo."
     ],
     [
         "domanda" => "Perché il mio account è associato a un paese?",
         "domanda2" => "Stabilire il paese associato al tuo account",
-        "para1" => "ifniofniofjniojio",
-        "para2" => "ifniofniofjniojio",
-        "para3" => "ifniofniofjniojio"
+        "para1" => "Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:",
+        "para2" => "Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.",
+        "listA1" => "La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:",
+        "listA2" => "La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.",
+        "listB1" => "Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.",
+        "listB2" => "Google LLC, con sede negli Stati Uniti, per il resto del mondo.",
     ],
     [
         "domanda" => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
@@ -48,28 +51,60 @@ $qa = [
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="header_a">
+
+        </div>
+        <div class="header_b">
+            
+        </div>
+    </header>
+    <main>
     <ul>
         <?php 
-        
+        $type = '"a"';
         foreach ($qa as $qst) {
             $dom = $qst["domanda"];
+            $dom2 = $qst["domanda2"];
             $para1 = $qst["para1"];
             $para2 = $qst["para2"];
             $para3 = $qst["para3"];
             $para4 = $qst["para4"];
+            $para5 = $qst["para5"];
+            $list1 = $qst["listA1"];
+            $list2 = $qst["listA2"];
+            $list3 = $qst["listB1"];
+            $list4 = $qst["listB2"];
 
             
             echo "<li>
             <h1>$dom</h1>
             <p>$para1</p>
+            
             <p>$para2</p>
             <p>$para3</p>
             <p>$para4</p>
-
-            
+            <p>$para5</p>    
             </li>";
+            /*  <ol>
+                    <li>
+                    <p>$list1</p>
+                    </li>
+
+                        <ol>
+                            <p>$list3</p>
+                            <p>$list4</p>
+
+                        </ol>
+
+                    <li>
+                    <p>$list2</p>
+                    </li>
+                </ol> */
         }
         ?>
     </ul>
+    </main>
+  
 </body>
 </html>
