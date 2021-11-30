@@ -55,9 +55,18 @@ main li h1 {
 main li p {
     margin-bottom: 40px;
 }
-ol{
+main ol{
     display: none;
 }
-ol.active {
+main ol.active {
     display: block;
 }
+main ol li{
+    margin-left: 20px ;
+} 
+main ol li p {
+    padding-left: 10px;
+}
+.ordered {
+    margin-left: 20px;
+} 

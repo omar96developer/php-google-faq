@@ -94,7 +94,7 @@ $qa = [
             <ol class='$active'>
                 <li><p>$list1</p></li>
 
-                <ol type='a' class='$active'>
+                <ol type='a' class='$active ordered'>
                     <li><p>$list3</p></li>
                     <li><p>$list4</p></li>
                 </ol>
