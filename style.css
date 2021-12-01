@@ -48,10 +48,12 @@ main ul {
     list-style: none;
 }
 
+
 main li h1 {
     margin-bottom: 20px;
     font-weight: 200;
 }
+
 main li p {
     margin-bottom: 40px;
 }
